@@ -1,0 +1,11 @@
+<h1>Please fill out this wonderful form to send a message</h1>
+
+<%= form_tag '/form_result', method: :post do %>
+  <div>
+    <%= label_tag :message %>
+    <%= text_field_tag :message %>
+  </div>
+  <div>
+    <%= submit_tag 'Send' %>
+  </div>
+<% end %>
